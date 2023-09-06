@@ -1,0 +1,221 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+:root {
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    --lightSlateBlueBackground: hsl(252, 100%, 67%);
+    --lightRoyalBlueBackground: hsl(241, 81%, 54%);
+    --violetBlueCircle: hsla(256, 72%, 46%, 1);
+    --persianBlueCircle: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+    --red: hsl(0, 100%, 67% ,7%);
+    --yellow: hsl(39, 100%, 56% ,7%);
+    --green: hsl(166, 100%, 37% ,7%);
+    --blue: hsl(234, 85%, 45% ,7%);
+}
+ul {
+    list-style-type: none;
+}
+
+/* Result Section */
+.result {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paleBlue);
+}
+.result .container {
+    width: 600px;
+    display: flex;
+}
+.result .container .result-item:first-child {
+    background: linear-gradient(to bottom, var(--lightSlateBlueBackground), var(--lightRoyalBlueBackground));
+    width: 300px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    text-align: center;
+    padding: 30px 30px 40px 30px;
+}
+.result .container .result-item:first-child h1 {
+    color: var(--lightLavender);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.result .container .result-item:first-child .circle {
+    width: 165px;
+    height: 165px;
+    padding: 50px 0;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: linear-gradient(to bottom,var(--violetBlueCircle),var(--persianBlueCircle));
+}
+.result .container .result-item:first-child .circle > h2 {
+    color: var(--white);
+    font-size: 45px;
+}
+.result .container .result-item:first-child .circle > span {
+    color: var(--lightLavender);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.result .container .result-item:first-child .circle + h2 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.result .container .result-item:first-child .desc {
+    color: var(--lightLavender);
+    width: 245px;
+    font-size: 17px;
+}
+.result .container .result-item:last-child {
+    background-color: var(--white);
+    width: 300px;
+    padding: 30px 30px 40px 30px;
+    border-radius: 0 25px 25px 0;
+    -webkit-border-radius: 0 25px 25px 0;
+    -moz-border-radius: 0 25px 25px 0;
+    -ms-border-radius: 0 25px 25px 0;
+    -o-border-radius: 0 25px 25px 0;
+}
+.result .container .result-item:last-child > h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.result .container .result-item:last-child > .item {
+    display: flex;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.result .container .result-item:last-child .item img {
+    width: 35px;
+    height: 35px;
+    padding-top: 12px;
+}
+.result .container .result-item:last-child .item .item-desc {
+    margin-right: 60px;
+    width: 57px;
+    font-size: 15px;
+}
+.result .container .result-item:last-child .item .rate {
+    font-size: 15px;
+}
+.result .container .result-item:last-child .item .special {
+    color: var(--lightLavender);
+}
+.result .container .result-item:last-child .item:nth-child(2) {
+    background-color: var(--red);
+}
+.result .container .result-item:last-child .item:nth-child(3) {
+    background-color: var(--yellow);
+}
+.result .container .result-item:last-child .item:nth-child(4) {
+    background-color: var(--green);
+}
+.result .container .result-item:last-child .item:nth-child(5) {
+    background-color: var(--blue);
+}
+.result .container .result-item:last-child .item:nth-child(2) p {
+    color: var(--lightRed);
+}
+.result .container .result-item:last-child .item:nth-child(3) p {
+    color: var(--orangeyYellow);
+}
+.result .container .result-item:last-child .item:nth-child(4) p {
+    color: var(--greenTeal);
+}
+.result .container .result-item:last-child .item:nth-child(5) p {
+    color: var(--cobaltBlue);
+}
+.result .container .result-item:last-child button {
+    width: 100%;
+    border: none;
+    height: 45px;
+    font-size: 17px;
+    color: var(--white);
+    background-color: rgb(32, 32, 78);
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+}
+.result .container .result-item:last-child button:hover {
+    background: linear-gradient(to bottom, var(--lightSlateBlueBackground), var(--lightRoyalBlueBackground));
+}
+
+@media (max-width:1000px) {
+    .result .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .result .container .result-item:first-child {
+        text-align: center;
+        padding: 20px;
+        height: 280px;
+        border-radius: 0px 0px 25px 25px;
+        -webkit-border-radius: 0px 0px 25px 25px;
+        -moz-border-radius: 0px 0px 25px 25px;
+        -ms-border-radius: 0px 0px 25px 25px;
+        -o-border-radius: 0px 0px 25px 25px;
+}
+    .result .container .result-item:first-child h1 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .result .container .result-item:first-child .circle {
+        width: 100px;
+        height: 100px;
+        padding: 16px 0;
+        margin: 0 auto 10px auto;
+    }
+    .result .container .result-item:first-child .circle > h2 {
+        font-size: 30px;
+    }
+    .result .container .result-item:first-child .circle > span {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .result .container .result-item:first-child .circle + h2 {
+        margin-bottom: 10px;
+    }
+    .result .container .result-item:first-child .desc {
+        width: 215px;
+        font-size: 12px;
+        margin: auto;
+    }
+}
